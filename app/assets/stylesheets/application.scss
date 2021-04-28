@@ -13,9 +13,25 @@
 @import "pages/index";
 
 
- .project-card {
+.project-card {
   transition: background-color 0.5s ease;
   &:hover {
     background-color: #f7f7f7;
+  }
+}
+
+#tasks-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.task-status {
+  .grip {
+    font-size: 1.1rem;
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
   }
 }
