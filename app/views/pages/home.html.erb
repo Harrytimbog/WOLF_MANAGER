@@ -1,2 +1,79 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="text-center mt-5">
+  <%= image_tag "wolf.png", alt: "Le Wagon", width: 200 %>
+
+  <h1>Harrie's Project Management App</h1>
+  <p>Let's help you to arrange, manage your projects and also define all tasks for each project</p>
+
+
+  <%= link_to "Browse", projects_path, class: "btn btn-danger text-white"  %>
+</div>
+
+
+<div class="white-container p-5">
+  <div class="bg-white d-flex justify-content-center align-items-center py-5 my-2">
+    <div class="mt-3 m-5 color-parent card-ghost card-category card-note-text app-question" id="card-fourth-section">
+      <h3>How does this app work?</h3>
+    </div>
+  </div>
+</div>
+
+
+<div class="custom-container">
+  <div class="homepage-advertising">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-5">
+        <div class="homepage-card">
+          <div class="homepage-card-title">
+            <h4><strong>CREATE PROJECT</strong></h4>
+          </div>
+          <div class="homepage-card-pic">
+            <%#= image_tag("upload.png", height: 32, width: 32, alt: "upload") %>
+          </div>
+          <div class="homepage-card-text">
+            <p><strong>Create your projectss</strong> directly on your catalogue. Access it through a user user-friendly interface.<p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-5">
+        <div class="homepage-card">
+          <div class="homepage-card-title">
+            <h4><strong>CREATE TASKS FOR EACH PROJECT</strong></h4>
+          </div>
+          <div class="homepage-card-pic">
+            <%#= image_tag("zoom.png", height: 32, width: 32, alt: "zoom") %>
+          </div>
+          <div class="homepage-card-text">
+            <p>Create  <strong>tasks</strong> for each projects as a breakdown and also update descriptive notes as a summary .</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-5">
+        <div class="homepage-card">
+          <div class="homepage-card-title">
+            <h4><strong>DRAG AND DROP TASKS</strong></h4>
+          </div>
+          <div class="homepage-card-pic">
+            <%#= image_tag("bulb.png", height: 32, width: 32, alt: "bulb") %>
+          </div>
+          <div class="homepage-card-text">
+            <p> <strong>Arrange all tasks according to the level of importance, according to </strong> your scale of preference</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-5 mb-4">
+        <div class="homepage-card">
+          <div class="homepage-card-title">
+            <h4><strong>UPDATE STATUS PROGRESSIVELY</strong></h4>
+          </div>
+          <div class="homepage-card-pic">
+            <%#= image_tag("calendar.png", height: 32, width: 32, alt: "calendar") %>
+          </div>
+          <div class="homepage-card-text">
+            <p> Update status for each <strong>task</strong> till the project is 100% completed </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

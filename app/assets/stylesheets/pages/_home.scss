@@ -1,1 +1,62 @@
 // Specific CSS for your home-page
+h1 {
+  color: #ddfff7;
+  font-family: 'Limelight', cursive;
+}
+
+p {
+  color: green;
+}
+
+.app-question {
+  color: green;
+}
+
+
+.homepage-card {
+  background-color: white;
+  height: 256px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 20px 2px rgba(0,0,0,0.1);
+  // transition: transform .5s;
+  &:hover {
+    text-decoration: none !important;
+    // transform: scale(1.1);
+  }
+}
+
+.homepage-card:hover .homepage-card-title h2 {
+  transition: transform .5s;
+  color: #ddfff7;
+}
+
+.homepage-card .homepage-card-text strong {
+  font-weight: bold;
+}
+
+.homepage-card:hover .homepage-card-text strong {
+  color: #ddfff7;
+}
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-card-title {
+  text-align: center;
+  padding: 15px;
+}
+
+.homepage-card-text {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ddfff7;
+}
+
+.homepage-card-pic {
+  display:flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}

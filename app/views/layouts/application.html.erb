@@ -8,14 +8,16 @@
     <%= render 'layouts/libraries' %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body class='bg-light'>
-    <div class="container pt-5">
-      <p class="notice"><%= render 'shared/navbar' %></p>
+  <body class="bg-dark">
+    <%= render 'shared/navbar' %>
+    <p class="notice"></p>
+    <div class="container">
       <p class="alert"><%= render 'shared/flashes' %></p>
         <%= yield %>
     </div>
