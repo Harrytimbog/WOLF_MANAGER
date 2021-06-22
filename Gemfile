@@ -24,6 +24,7 @@ gem "hiredis", "~> 0.6.3"
 
 gem "redis-session-store", "~> 0.11.3"
 gem 'pry-rails'
+gem 'letter_opener', group: :development
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
