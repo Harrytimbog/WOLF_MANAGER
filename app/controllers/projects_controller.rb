@@ -25,16 +25,12 @@ class ProjectsController < ApplicationController
   def create
     @project = current_user.projects.build(project_params)
 
-    respond_to do |format|
-      if @project.save
-        mail = ProjectMailer.with(project: @project).create_confirmation
-        mail.deliver_now
-        format.html { redirect_to @project, notice: "Project was successfully created." }
-        format.json { render :show, status: :created, location: @project }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
-      end
+    if @project.save
+      mail = ProjectMailer.with(project: @project).create_confirmation
+      mail.deliver_now
+      redirect_to @project, notice: "Project was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 

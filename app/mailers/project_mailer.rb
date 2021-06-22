@@ -4,9 +4,12 @@ class ProjectMailer < ApplicationMailer
   #
   #   en.project_mailer.new_project_email.subject
   #
-  def new_project_email
+  def create_confirmation
     @project = params[:project]
 
-    mail(to: @project.user.email, subject: "You created a new project <%= @project.name %>!")
+    mail(
+      to: @project.user.email,
+      subject: "Project #{@project.name} was created!"
+    )
   end
 end

@@ -2,15 +2,6 @@ class Project < ApplicationRecord
   has_many :tasks
   belongs_to :user
 
-  def create_confirmation
-    @project = params[:project]
-
-    mail(
-      to: @project.user.email,
-      subject: "Project #{@project.name} was created!"
-    )
-  end
-
   def badge_color
     case status
     when 'not-started'
