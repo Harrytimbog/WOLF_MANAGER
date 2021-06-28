@@ -5,7 +5,7 @@ class UserMailer < ApplicationMailer
     # This will render a view in `app/views/user_mailer`!
   end
 
-  def project_reminder
+  def projects_reminder
     @user = params[:user]
     mail(
       to: @user.email,
