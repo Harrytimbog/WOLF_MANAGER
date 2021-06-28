@@ -12,4 +12,13 @@ class ProjectMailer < ApplicationMailer
       subject: "Project #{@project.name} was created!"
     )
   end
+
+  def project_reminder
+    @project = params[:project]
+
+    mail(
+      to: @project.user.email,
+      subject: "Project Reminder"
+    )
+  end
 end
