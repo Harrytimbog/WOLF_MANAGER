@@ -23,6 +23,7 @@ gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
 
 gem "hiredis", "~> 0.6.3"
+gem 'rails_admin', '~> 2.0'
 
 gem "redis-session-store", "~> 0.11.3"
 gem 'pry-rails'
