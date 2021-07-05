@@ -6,7 +6,7 @@
   <body>
     <h1>Reminder from Wolf Projects Manager </h1>
     <p>
-      Hi <%= @project.user.email %>, Remember to attend to the <%= @project.name %> project and update each tasks till all are 100% complete
+      Hi <%= @project.user.username %>, Remember to attend to the <%= @project.name %> project and update each tasks till all are 100% complete
     </p>
     <p>This is a friendly reminder about <%= @project.name %> project that you created on <%= @project.created_at.strftime("%A, %B") %> (<%= @project.created_at.strftime("%m/%d/%Y") %>) at <%= @project.created_at.strftime("%I:%M%p") %> </p>
     <%= link_to "Wolf Projects", root_url, class: "btn btn-secondary"  %>

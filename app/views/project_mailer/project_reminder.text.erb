@@ -1,6 +1,6 @@
 Reminder from Wolf Projects Manager
 
-  Hi <%= @project.user.email %>, Remember to attend to <%= @project.name %> and update each tasks till all are 100% complete
+  Hi <%= @project.user.username %>, Remember to attend to <%= @project.name %> and update each tasks till all are 100% complete
   This is a friendly reminder about the <%= @project.name %> project that you created on <%= @project.created_at.strftime("%A, %B") %> (<%= @project.created_at.strftime("%m/%d/%Y") %>) at <%= @project.created_at.strftime("%I:%M%p") %>
 
 <%= link_to "Wolf Projects", root_url, class: "btn btn-secondary"  %>
