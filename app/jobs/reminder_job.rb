@@ -1,8 +1,9 @@
 class ReminderJob < ApplicationJob
   queue_as :default
 
-  def perform
-    mail = UserMailer.with(user: @user).project_reminder
+  def perform(project_id)
+    @project = Project.find(project_id)
+    mail = ProjectMailer.with(project: @project).project_reminder
     mail.deliver_now
   end
 end

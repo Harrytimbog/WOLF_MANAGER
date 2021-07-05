@@ -4,10 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Reminder for Project <%= @project.name %> that you created!</h1>
+    <h1>Reminder from Wolf Projects Manager </h1>
     <p>
-      Remember to attend to project <%= @project.name %>, set and update each tasks till it is 100% completed
+      Hi <%= @user.email %>, Remember to attend to set projects and update each tasks till all are 100% complete
     </p>
-    <p><%= @project.description %></p>
+    <p>This is a friendly reminder even if you don't have a set project yet</p>
+    <%= link_to "Wolf Projects", root_url, class: "btn btn-secondary"  %>
   </body>
 </html>

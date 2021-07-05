@@ -18,7 +18,7 @@ class ProjectMailer < ApplicationMailer
 
     mail(
       to: @project.user.email,
-      subject: "Project Reminder"
+      subject: "Project Reminder!!!"
     )
   end
 end
