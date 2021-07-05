@@ -24,11 +24,12 @@ class ProjectsController < ApplicationController
   # POST /projects or /projects.json
   def create
     @project = current_user.projects.build(project_params)
+    @project.user = current_user
 
     if @project.save
       mail = ProjectMailer.with(project: @project).create_confirmation
       mail.deliver_later
-      redirect_to @project, notice: "Project was successfully created."
+      redirect_to @property, notice: "Project was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
