@@ -25,19 +25,23 @@ class TasksController < ApplicationController
   def create
     @task = @project.tasks.build(task_params)
 
-    if @task.save
-      redirect_to(@task.project)
-    else
-      render action: 'new'
+    respond_to do |format|
+      if @task.save
+        format.html { redirect_to @task.project, notice: "Task was successfully created." }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+      end
     end
   end
 
   # PUT projects/1/tasks/1
   def update
-    if @task.update_attributes(task_params)
-      redirect_to(@task.project)
-    else
-      render action: 'edit'
+    respond_to do |format|
+      if @task.update_attributes(task_params)
+        format.html { redirect_to @task.project, notice: "Task was successfully updated." }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -45,7 +49,10 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
 
-    redirect_to @project
+    respond_to do |format|
+      format.html { redirect_to @project, notice: "Task was successfully destroyed." }
+      format.json { head :no_content }
+    end
   end
 
   private

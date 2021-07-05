@@ -4,6 +4,7 @@ namespace :project do
     projects = Project.all
     puts "Enqueuing reminder for #{projects.size} projects..."
     projects.each do |project|
+      puts project.id
       ReminderJob.perform_later(project.id)
     end
   end
