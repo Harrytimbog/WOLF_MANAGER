@@ -29,7 +29,7 @@ class ProjectsController < ApplicationController
     if @project.save
       mail = ProjectMailer.with(project: @project).create_confirmation
       mail.deliver_later
-      redirect_to @property, notice: "Project was successfully created."
+      redirect_to @project, notice: "Project was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
