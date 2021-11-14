@@ -1,13 +1,13 @@
 ## WOLF-PROJECT-MANAGER
 A basic blog built with Postgres, Ruby on Rails.
 
-## API Documentation    return
+## Documentation     
 
-## Demo    return
+## Demo    
 
 [Run demo](https://wolf-project-management.herokuapp.com/)
 
-## Run Locally   return
+## Run Locally   
 
 Clone the project
 
@@ -39,7 +39,7 @@ Start Server
 rails s
 ```
 
-## Feedback  return
+## Feedback  
 
 Arigbede Timilehin Emmanuel - @Harrytimbog - harriemannie@gmail.com
 
