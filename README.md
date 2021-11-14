@@ -1,7 +1,48 @@
+## WOLF-PROJECT-MANAGER
+A basic blog built with Postgres, Ruby on Rails.
 
-# App Overview
+## API Documentation    return
 
-WOLF_MANAGER is a simple project management app that helps to create projects on each user's catalogue, create specific tasks for the project with detailed descriptions and also update the project status. Project tasks can be sorted based on the user's scale of preference and task status are updated progressively.
+## Demo    return
 
-## Usage
-https://wolf-project-management.herokuapp.com/
+[Run demo](https://wolf-project-management.herokuapp.com/)
+
+## Run Locally   return
+
+Clone the project
+
+``` console
+git clone https://github.com/Harrytimbog/WOLF_MANAGER.git
+```
+
+Go to the project directory
+
+``` console
+cd WOLF_MANAGER
+```
+
+Install dependencies
+
+``` console
+npm install
+```
+
+Install gems
+
+``` console
+bundle install
+```
+
+Start Server
+
+``` console
+rails s
+```
+
+## Feedback  return
+
+Arigbede Timilehin Emmanuel - @Harrytimbog - harriemannie@gmail.com
+
+Project Link: https://github.com/Harrytimbog/WOLF_MANAGER.git
+
+Demo Link: https://wolf-project-management.herokuapp.com/
