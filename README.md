@@ -1,5 +1,5 @@
 ## WOLF-PROJECT-MANAGER
-A basic blog built with Postgres, Ruby on Rails.
+A Project Management Tool built with Postgres, Ruby on Rails. Users can create personal projects, add tasks to each projects then drag and drop task according to the level of importance until each project is completed.
 
 ## Documentation     
 
@@ -12,13 +12,13 @@ A basic blog built with Postgres, Ruby on Rails.
 Clone the project
 
 ``` console
-git clone https://github.com/Harrytimbog/WOLF_MANAGER.git
+git clone git@github.com:Harrytimbog/WOLF_PROJECT_MANAGER.git
 ```
 
 Go to the project directory
 
 ``` console
-cd WOLF_MANAGER
+cd WOLF_PROJECT_MANAGER
 ```
 
 Install dependencies
@@ -49,6 +49,6 @@ rails s
 
 Arigbede Timilehin Emmanuel - @Harrytimbog - harriemannie@gmail.com
 
-Project Link: https://github.com/Harrytimbog/WOLF_MANAGER.git
+Project Link: git@github.com:Harrytimbog/WOLF_PROJECT_MANAGER.git
 
 Demo Link: https://wolf-project-management.herokuapp.com/
