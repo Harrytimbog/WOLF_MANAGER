@@ -1,5 +1,5 @@
 ## WOLF-PROJECT-MANAGER
-A Project Management Tool built with Postgres, Ruby on Rails. Users can create personal projects, add tasks to each projects then drag and drop tasks according to the level of importance until each project is completed. User can also set status of tasks and completion level of projects are always updated automatically.
+A Project Management Tool built with PostgresQL, Ruby on Rails. Users can create personal projects, add tasks to each projects then drag and drop tasks according to the level of importance until each project is completed. User can also set status of tasks and completion level of projects are always updated automatically.
 
 ## Documentation     
 
